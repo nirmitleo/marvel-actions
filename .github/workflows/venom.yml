@@ -1,0 +1,11 @@
+name: another simple github action to run simple command in python shell
+on: [push]
+jobs:
+  sample-venom-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: venom processor count
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
