@@ -1,0 +1,15 @@
+name: simple spiderman command
+
+on: [push]
+
+jobs:
+  run-spiderman-command:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: announce spiderman
+        run: echo spiderman
+      - name: throws multiple spidey-webs
+        run: |
+          node -v
+          npm -v
+          
